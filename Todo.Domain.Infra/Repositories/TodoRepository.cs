@@ -12,9 +12,9 @@ namespace Todo.Domain.Infra.Repositories
     public class TodoRepository : ITodoRepository
     {
 
-        private readonly DataContext.DataContext _dataContext;
+        private readonly DataContext.Context _dataContext;
 
-        public TodoRepository(DataContext.DataContext dataContext)
+        public TodoRepository(DataContext.Context dataContext)
         {
             _dataContext = dataContext;
         }

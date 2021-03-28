@@ -7,9 +7,9 @@ using Todo.Domain.Entities;
 
 namespace Todo.Domain.Infra.DataContext
 {
-    public class DataContext : DbContext
+    public class Context : DbContext
     {
-        public DataContext(DbContextOptions<DataContext> options)
+        public Context(DbContextOptions<Context> options)
             :base(options)
         {
         }
